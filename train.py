@@ -135,3 +135,7 @@ history = Dcnn.fit(train_dataset,
                    callbacks=[cp_callback])
 
 print(Dcnn.summary())
+
+
+results = Dcnn.evaluate(test_dataset)
+print(results)
